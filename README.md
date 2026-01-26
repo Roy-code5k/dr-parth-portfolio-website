@@ -27,7 +27,7 @@ This website represents the doctor's professional identity and medical services 
 
 ## 👥 Team
 - **Ayush Patel** – Frontend Development  
-- **<Friend Name>** – UI Animations & Styling
+- **Hrituraj Roy** – Frontend workflows and Deployment
 
 ## 📈 Status
 🟡 In Development  

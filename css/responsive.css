@@ -10,6 +10,17 @@
     .grid-3 {
         gap: 3rem;
     }
+
+    /* Footer Tablet Layout */
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3rem;
+    }
+
+    /* Certifications Tablet */
+    .cert-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Mobile styles */
@@ -120,8 +131,15 @@
         font-size: 1.5rem !important;
     }
 
-    .hero-image div {
+    .hero-image-wrapper {
         height: 350px !important;
+        width: 100%;
+    }
+
+    .hero-image-wrapper img {
+        height: 100% !important;
+        width: auto;
+        object-fit: contain;
     }
 
     /* About Section Mobile */
@@ -174,6 +192,89 @@
     .about-content {
         padding: 0 0.5rem;
     }
+
+    /* Timeline Mobile Adjustments */
+    .timeline {
+        padding-left: 2rem;
+    }
+
+    .timeline-dot {
+        left: calc(-2rem - 7px);
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .timeline-year {
+        position: static;
+        font-size: 0.8rem;
+        margin-left: calc(48px + 1.5rem);
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    /* Map Container Mobile */
+    .map-container {
+        min-height: 300px;
+        order: -1;
+    }
+
+    /* Footer Mobile (from layout.css) */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-legal {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Certifications Mobile */
+    .certifications-card {
+        padding: 2rem;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cert-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Patient Care Mobile */
+    .patient-care-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .commitment-box {
+        padding: 2rem;
+    }
+
+    /* Clinic Tour Slider Mobile */
+    .slide img {
+        height: 350px;
+    }
+
+    .slide-overlay {
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        padding: 1.5rem;
+    }
+
+    /* Contact Form Mobile */
+    .contact-form-container {
+        padding: 1.5rem;
+    }
 }
 
 /* Extra Small Mobile (phones in portrait) */
@@ -189,45 +290,44 @@
     .hero-content h1 {
         font-size: 2rem !important;
     }
-}
 
-.hero-content span {
-    font-size: 0.75rem !important;
-}
+    .hero-content span {
+        font-size: 0.75rem !important;
+    }
 
-.hero-image div {
-    height: 300px !important;
-}
+    .hero-image-wrapper {
+        height: 350px !important;
+    }
 
-.btn {
-    padding: 0.65rem 1rem;
-    font-size: 0.8rem;
-}
+    .btn {
+        padding: 0.65rem 1rem;
+        font-size: 0.8rem;
+    }
 
-.btn-wide {
-    min-width: 140px;
-}
+    .btn-wide {
+        min-width: 140px;
+    }
 
-/* Stats grid on very small screens */
-.hero-content .stats {
-    gap: 1rem;
-}
+    /* Stats grid on very small screens */
+    .hero-content .stats {
+        gap: 1rem;
+    }
 
-.hero-content .stats h3 {
-    font-size: 1.25rem !important;
-}
+    .hero-content .stats h3 {
+        font-size: 1.25rem !important;
+    }
 
-.hero-content .stats p {
-    font-size: 0.75rem !important;
-}
+    .hero-content .stats p {
+        font-size: 0.75rem !important;
+    }
 
-/* Card spacing */
-.card {
-    padding: 1.25rem;
-}
+    /* Card spacing */
+    .card {
+        padding: 1.25rem;
+    }
 
-/* Section padding */
-section {
-    padding: 2.5rem 1rem;
-}
+    /* Section padding */
+    section {
+        padding: 2.5rem 1rem;
+    }
 }

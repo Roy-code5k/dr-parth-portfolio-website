@@ -68,9 +68,9 @@
 }
 
 .small-text {
-    font-size: 0.95rem !important;
-    font-weight: 400 !important;
-    color: var(--text-light) !important;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--text-light);
     line-height: 1.5;
 }
 
@@ -126,10 +126,4 @@
     font-size: 0.85rem;
     color: var(--text-light);
     opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .contact-form-container {
-        padding: 1.5rem;
-    }
 }

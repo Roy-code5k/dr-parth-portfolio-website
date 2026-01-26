@@ -163,61 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initContactForm();
 
-
-  // Certificate Lightbox
-  const initLightbox = () => {
-    const lightbox = document.getElementById('certLightbox');
-    if (!lightbox) return;
-
-    const lightboxImg = lightbox.querySelector('.lightbox-image');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
-    const certCards = document.querySelectorAll('.cert-card');
-
-    const openLightbox = (imgSrc) => {
-      lightboxImg.src = imgSrc;
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling
-    };
-
-    const closeLightbox = () => {
-      lightbox.classList.remove('active');
-      setTimeout(() => {
-        lightboxImg.src = '';
-      }, 300); // Clear after transition
-      document.body.style.overflow = '';
-    };
-
-    // Card Click Events
-    certCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const img = card.querySelector('.cert-image');
-        if (img) {
-          openLightbox(img.src);
-        }
-      });
-    });
-
-    // Close Events
-    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
-
-    // Close on click outside image
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-        closeLightbox();
-      }
-    });
-  };
-
-  initLightbox();
-  initContactForm();
-
   const initCertificateLightbox = () => {
     const lightbox = document.getElementById('certLightbox');
     if (!lightbox) return;

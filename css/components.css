@@ -428,31 +428,6 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .timeline {
-        padding-left: 2rem;
-    }
-
-    .timeline-dot {
-        left: calc(-2rem - 7px);
-    }
-
-    .timeline-header {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .timeline-year {
-        position: static;
-        font-size: 0.8rem;
-        margin-left: calc(48px + 1.5rem);
-    }
-
-    .timeline-content {
-        padding: 1.5rem;
-    }
-}
-
 /* Certifications Section */
 .certifications-card {
     background: #eef7f8;
@@ -624,27 +599,6 @@
     padding: 0;
 }
 
-@media (max-width: 1024px) {
-    .cert-gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .certifications-card {
-        padding: 2rem;
-    }
-
-    .cert-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .cert-gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Patient Care Section */
 .patient-care-grid {
     margin-bottom: 4rem;
@@ -716,17 +670,6 @@
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .patient-care-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .commitment-box {
-        padding: 2rem;
-    }
 }
 
 /* Clinic Tour Slider Section */
@@ -835,21 +778,6 @@
 .dot.active {
     background: white;
     transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-    .slide img {
-        height: 350px;
-    }
-
-    .slide-overlay {
-        width: 100%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    }
-
-    .slide-overlay {
-        padding: 1.5rem;
-    }
 }
 
 /* About Section */
@@ -1097,14 +1025,6 @@
 .map-content p {
     font-size: 0.9rem;
     opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .map-container {
-        min-height: 300px;
-        order: -1;
-        /* Place map above/below as needed? Default is below in DOM flow */
-    }
 }
 
 /* Doctor Quote Section */
