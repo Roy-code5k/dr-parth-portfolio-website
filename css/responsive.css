@@ -163,6 +163,17 @@
         font-size: 16px !important;
         /* Prevents zoom on iOS */
     }
+
+    /* Fix text overflow on mobile */
+    .about-text {
+        text-align: left !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .about-content {
+        padding: 0 0.5rem;
+    }
 }
 
 /* Extra Small Mobile (phones in portrait) */
