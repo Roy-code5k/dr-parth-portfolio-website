@@ -30,7 +30,7 @@ This website represents the doctor's professional identity and medical services 
 - **Hrituraj Roy** – Frontend workflows and Deployment
 
 ## 📈 Status
-🟡 In Development  
+🟡 Developed  
 🔵 First freelance client project
 
 ## 📜 License
